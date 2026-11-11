@@ -126,9 +126,13 @@ export function parseTableRows(tableHtml) {
 }
 
 export function ipv6Symbol(cell) {
-  if (/対応予定|後日対応/.test(cell)) return 'plan';
-  if (/^[〇○◯]/.test(cell)) return /※3/.test(cell) ? 'ok*' : 'ok';
-  if (/^[×✕x]/i.test(cell)) return 'no';
+  const c = String(cell).trim();
+  if (/対応予定|後日対応/.test(c)) return 'plan';
+  // 〇 は環境によって ○ ◯ ⭕ などの別の文字のこともある
+  if (/^[〇○◯⭕◎]/.test(c)) return /※\s*3/.test(c) ? 'ok*' : 'ok';
+  // × も × ✕ ✖ ✗ ✘ ╳ ｘ Ｘ x X などの別の文字のことがある。「－」「-」「非対応」も×扱い
+  if (/^[\u00D7\u2715\u2716\u2717\u2718\u2573\u2A2F\u274C\uFF58\uFF38xX]/.test(c)) return 'no';
+  if (/^[-\u2010-\u2015\u2212\uFF0D\u30FC]$/.test(c) || /非対応|未対応/.test(c)) return 'no';
   return null;
 }
 
@@ -162,7 +166,7 @@ export function parseIpv6Page(html) {
     const row = {};
     let bad = false;
     IPV6_COLUMNS.forEach((k, i) => { const s = ipv6Symbol(vals[i]); if (!s) bad = true; row[k] = s; });
-    models[model] = bad ? { error: `読めない記号があります：${vals.join(' | ')}` } : row;
+    models[model] = bad ? { error: `読めない記号があります：${vals.map(v => ipv6Symbol(v) ? v : `${v}［${[...v].slice(0, 2).map(ch => 'U+' + ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')).join(' ')}］`).join(' | ')}` } : row;
   }
   return { asOf, models };
 }
