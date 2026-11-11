@@ -1,3 +1,67 @@
-data/scrape-report.json
-data/health-report.md
-node_modules/
+name: 商品データの自動更新
+
+on:
+  schedule:
+    - cron: '0 18 * * *'   # 毎日 3:00（日本時間）
+  workflow_dispatch:        # Actions画面から手動でも実行できる
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 更新前のデータを控える
+        run: cp data/products.json /tmp/products.prev.json
+
+      - name: 公式サイトから最新情報を取得
+        run: node scripts/scrape.mjs
+
+      - name: 健全性チェック
+        id: health
+        run: node scripts/health-check.mjs /tmp/products.prev.json
+        continue-on-error: true
+
+      - name: 問題なし → そのまま本番に反映
+        if: steps.health.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/products.json
+          if git diff --cached --quiet; then
+            echo "変更はありません"
+          else
+            git commit -m "商品データを自動更新（$(date -u -d '+9 hours' +%Y-%m-%d)）"
+            git push
+          fi
+
+      - name: 問題あり → PRとIssueで知らせる
+        if: steps.health.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DAY=$(date -u -d '+9 hours' +%Y%m%d)
+          BRANCH="auto-update/${DAY}-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/products.json
+          git commit -m "商品データの自動更新（要確認 ${DAY}）" || true
+          git push origin "$BRANCH"
+          gh pr create --title "【要確認】Wi-Fiセレクター 商品データの自動更新 ${DAY}" --body-file data/health-report.md --base "${{ github.event.repository.default_branch }}" --head "$BRANCH" || true
+          gh issue create --title "【要確認】Wi-Fiセレクターの自動更新で確認が必要なことがあります（${DAY}）" --body-file data/health-report.md || true
+          exit 1
