@@ -13,17 +13,37 @@
       "name": "10Gbps対応インターネットポート×1／LAN×1搭載 Wi-Fi 7トライバンドルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-7t100xxr/index.htm",
       "image": "https://www.iodata.jp/image/wn-7t100xxr_l.jpg",
-      "jan": "",
+      "jan": "4957180186764",
       "price": null,
       "wifiGen": 7,
-      "bands": ["2.4", "5", "6"],
-      "speed": { "6": 5765, "5": 2882, "2.4": 1377 },
+      "bands": [
+        "2.4",
+        "5",
+        "6"
+      ],
+      "speed": {
+        "5": 2882,
+        "6": 5765,
+        "2.4": 1377
+      },
       "recommendedDevices": 64,
       "wanGbps": 10,
-      "lan": { "count": 5, "maxGbps": 10, "detail": "10G LAN×1、1G LAN×4（4ポート合計で最大1Gbps）" },
+      "lan": {
+        "count": 5,
+        "maxGbps": 10,
+        "detail": "10G LAN×1、1G LAN×4（4ポート合計で最大1Gbps）"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
-      "mesh": { "parent": true, "child": true, "type": "Wi-Fi EasyMesh", "note": "推奨子機は1台まで。WN-7T94XR／WN-7D36QRを親機にした子機としては後日対応予定" },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
+      "mesh": {
+        "parent": true,
+        "child": true,
+        "type": "Wi-Fi EasyMesh",
+        "note": "推奨子機は1台まで。WN-7T94XR／WN-7D36QRを親機にした子機としては後日対応予定"
+      },
       "mlo": true,
       "netFilter": false,
       "parental": true,
@@ -35,7 +55,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵×8",
@@ -44,8 +66,30 @@
       "warrantyYears": 3,
       "size": "約240(W)×70(D)×268(H)mm",
       "weight": "約1.8kg",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok", "transix": "plan", "transix_fixed": "plan", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "ok", "ocx": "plan" },
-      "features": ["Wi-Fi 7", "6GHz対応トライバンド", "MLO", "10G インターネットポート", "10G LANポート×1", "Wi-Fi EasyMesh", "回線自動判別", "Wi-Fi設定コピー", "ペアレンタルコントロール", "リモートメンテナンス"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok",
+        "transix": "plan",
+        "transix_fixed": "plan",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "ok",
+        "ocx": "plan"
+      },
+      "features": [
+        "Wi-Fi 7",
+        "6GHz対応トライバンド",
+        "MLO",
+        "10G インターネットポート",
+        "10G LANポート×1",
+        "Wi-Fi EasyMesh",
+        "回線自動判別",
+        "Wi-Fi設定コピー",
+        "ペアレンタルコントロール",
+        "リモートメンテナンス"
+      ]
     },
     {
       "model": "WN-7T94XR",
@@ -57,14 +101,34 @@
       "jan": "4957180163499",
       "price": null,
       "wifiGen": 7,
-      "bands": ["2.4", "5", "6"],
-      "speed": { "6": 5765, "5": 2882, "2.4": 688 },
+      "bands": [
+        "2.4",
+        "5",
+        "6"
+      ],
+      "speed": {
+        "5": 2882,
+        "6": 5765,
+        "2.4": 688
+      },
       "recommendedDevices": 64,
       "wanGbps": 10,
-      "lan": { "count": 3, "maxGbps": 2.5, "detail": "2.5G LAN×3" },
+      "lan": {
+        "count": 3,
+        "maxGbps": 2.5,
+        "detail": "2.5G LAN×3"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
-      "mesh": { "parent": true, "child": true, "type": "Wi-Fi EasyMesh", "note": "推奨子機は2台まで。エレコム製Wi-Fi 7ルーターとの互換性確認済み" },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
+      "mesh": {
+        "parent": true,
+        "child": true,
+        "type": "Wi-Fi EasyMesh",
+        "note": "推奨子機は2台まで。エレコム製Wi-Fi 7ルーターとの互換性確認済み"
+      },
       "mlo": true,
       "netFilter": false,
       "parental": true,
@@ -76,7 +140,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵×6",
@@ -85,8 +151,32 @@
       "warrantyYears": 3,
       "size": "約180(W)×65(D)×247(H)mm",
       "weight": "約1.4kg",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok", "transix": "ok", "transix_fixed": "ok", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "ok", "ocx": "ok" },
-      "features": ["Wi-Fi 7", "6GHz対応トライバンド", "MLO", "10G インターネットポート", "2.5G LANポート×3", "Wi-Fi EasyMesh", "回線自動判別", "Wi-Fi設定コピー", "ペアレンタルコントロール", "リモートメンテナンス", "ペイバック保証", "土日サポート"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok",
+        "transix": "ok",
+        "transix_fixed": "ok",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "ok",
+        "ocx": "ok"
+      },
+      "features": [
+        "Wi-Fi 7",
+        "6GHz対応トライバンド",
+        "MLO",
+        "10G インターネットポート",
+        "2.5G LANポート×3",
+        "Wi-Fi EasyMesh",
+        "回線自動判別",
+        "Wi-Fi設定コピー",
+        "ペアレンタルコントロール",
+        "リモートメンテナンス",
+        "ペイバック保証",
+        "土日サポート"
+      ]
     },
     {
       "model": "WN-7D36QR",
@@ -98,14 +188,32 @@
       "jan": "4957180163468",
       "price": null,
       "wifiGen": 7,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 2882, "2.4": 688 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 2882,
+        "2.4": 688
+      },
       "recommendedDevices": 40,
       "wanGbps": 2.5,
-      "lan": { "count": 2, "maxGbps": 1, "detail": "1G LAN×2" },
+      "lan": {
+        "count": 2,
+        "maxGbps": 1,
+        "detail": "1G LAN×2"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
-      "mesh": { "parent": true, "child": true, "type": "Wi-Fi EasyMesh", "note": "推奨子機は2台まで。エレコム製Wi-Fi 7ルーターとの互換性確認済み" },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
+      "mesh": {
+        "parent": true,
+        "child": true,
+        "type": "Wi-Fi EasyMesh",
+        "note": "推奨子機は2台まで。エレコム製Wi-Fi 7ルーターとの互換性確認済み"
+      },
       "mlo": true,
       "netFilter": false,
       "parental": true,
@@ -117,7 +225,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵×4",
@@ -126,8 +236,28 @@
       "warrantyYears": 3,
       "size": "約160(W)×50(D)×215(H)mm",
       "weight": "約900g",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok", "transix": "ok", "transix_fixed": "ok", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "ok", "ocx": "plan" },
-      "features": ["Wi-Fi 7", "MLO", "2.5G インターネットポート", "Wi-Fi EasyMesh", "回線自動判別", "Wi-Fi設定コピー", "ペアレンタルコントロール", "リモートメンテナンス"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok",
+        "transix": "ok",
+        "transix_fixed": "ok",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "ok",
+        "ocx": "plan"
+      },
+      "features": [
+        "Wi-Fi 7",
+        "MLO",
+        "2.5G インターネットポート",
+        "Wi-Fi EasyMesh",
+        "回線自動判別",
+        "Wi-Fi設定コピー",
+        "ペアレンタルコントロール",
+        "リモートメンテナンス"
+      ]
     },
     {
       "model": "WHG-DAX1800A",
@@ -136,17 +266,38 @@
       "name": "Wi-Fi 6（IEEE802.11ax）対応 法人向けアクセスポイント",
       "url": "https://www.iodata.jp/product/network/ap/whg-dax1800a/index.htm",
       "image": "https://www.iodata.jp/image/whg-dax1800a_l.jpg",
-      "jan": "",
-      "price": { "taxIn": 54780, "taxEx": 49800 },
+      "jan": "4957180159126",
+      "price": {
+        "taxIn": 54780,
+        "taxEx": 49800
+      },
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 1201, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 1201,
+        "2.4": 574
+      },
       "recommendedDevices": 100,
       "wanGbps": null,
-      "lan": { "count": 1, "maxGbps": 1, "detail": "1G LAN×1（PoE受電：IEEE802.3af／at）" },
+      "lan": {
+        "count": 1,
+        "maxGbps": 1,
+        "detail": "1G LAN×1（PoE受電：IEEE802.3af／at）"
+      },
       "pppoeSessions": 0,
-      "modes": { "ap": true, "repeater": false },
-      "mesh": { "parent": true, "child": true, "type": "独自メッシュ（同機種間）", "note": "推奨ノード数 最大8、推奨ホップ数 最大3" },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
+      "mesh": {
+        "parent": true,
+        "child": true,
+        "type": "独自メッシュ（同機種間）",
+        "note": "推奨ノード数 最大8、推奨ホップ数 最大3"
+      },
       "mlo": false,
       "netFilter": false,
       "parental": false,
@@ -159,7 +310,10 @@
       "snmp": true,
       "roaming": true,
       "poe": true,
-      "power": ["AC", "PoE"],
+      "power": [
+        "AC",
+        "PoE"
+      ],
       "placement": "天井取付（取付キット添付）",
       "ceiling": true,
       "antenna": "内蔵×4",
@@ -170,7 +324,22 @@
       "size": "約160(W)×160(D)×33(H)mm",
       "weight": "約370g",
       "ipv6": null,
-      "features": ["Wi-Fi 6", "PoE受電（IEEE802.3af／at）", "ACアダプター添付", "WPA3エンタープライズ", "IEEE802.1X／RADIUS認証", "マルチSSID 最大16", "タグVLAN 最大16", "SNMP v1／v2c／v3", "高速ローミング（802.11r／k）", "ゲストネットワーク", "STAポートセパレーター", "メッシュ（最大8ノード）", "推奨100台", "ISS保守対応"]
+      "features": [
+        "Wi-Fi 6",
+        "PoE受電（IEEE802.3af／at）",
+        "ACアダプター添付",
+        "WPA3エンタープライズ",
+        "IEEE802.1X／RADIUS認証",
+        "マルチSSID 最大16",
+        "タグVLAN 最大16",
+        "SNMP v1／v2c／v3",
+        "高速ローミング（802.11r／k）",
+        "ゲストネットワーク",
+        "STAポートセパレーター",
+        "メッシュ（最大8ノード）",
+        "推奨100台",
+        "ISS保守対応"
+      ]
     },
     {
       "model": "UD-LTA",
@@ -182,13 +351,26 @@
       "jan": "4957180181646",
       "price": null,
       "wifiGen": 5,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 867, "2.4": 300 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 867,
+        "2.4": 300
+      },
       "recommendedDevices": 8,
       "wanGbps": 0.1,
-      "lan": { "count": 4, "maxGbps": 0.1, "detail": "100M LAN×3、LAN／WAN切替×1" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 0.1,
+        "detail": "100M LAN×3、LAN／WAN切替×1"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": false, "repeater": false },
+      "modes": {
+        "ap": false,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -202,7 +384,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "据え置き",
       "ceiling": false,
       "antenna": "内蔵（LTE×2、Wi-Fi×2）",
@@ -216,7 +400,12 @@
       "lte": {
         "form": "router",
         "sim": "nanoSIM",
-        "carriers": ["docomo", "au", "softbank", "rakuten"],
+        "carriers": [
+          "docomo",
+          "au",
+          "softbank",
+          "rakuten"
+        ],
         "bands": "B1／B3／B8／B18／B19／B26／B41",
         "down": 150,
         "up": 50,
@@ -228,7 +417,17 @@
         "waterproof": null,
         "ddns": true
       },
-      "features": ["4G／LTE（SIMで通信）", "Wi-Fi 5", "LANポートをWANに切替可", "有線WAN→LTEの自動切替", "VPNサーバー／クライアント（WireGuard等）", "ゲストSSID（セパレート）", "ダイナミックDNS", "APN自動設定", "ISSセンドバック保守（3年）対応"]
+      "features": [
+        "4G／LTE（SIMで通信）",
+        "Wi-Fi 5",
+        "LANポートをWANに切替可",
+        "有線WAN→LTEの自動切替",
+        "VPNサーバー／クライアント（WireGuard等）",
+        "ゲストSSID（セパレート）",
+        "ダイナミックDNS",
+        "APN自動設定",
+        "ISSセンドバック保守（3年）対応"
+      ]
     },
     {
       "model": "UD-LT2",
@@ -237,16 +436,30 @@
       "name": "固定回線と4G／LTE両対応 ハイブリッドM2Mルーター",
       "url": "https://www.iodata.jp/product/lan/appliance/ud-lt2/index.htm",
       "image": "https://www.iodata.jp/image/ud-lt2_l.jpg",
-      "jan": "",
-      "price": { "taxIn": 40260, "taxEx": 36600 },
+      "jan": "4957180148717",
+      "price": {
+        "taxIn": 40260,
+        "taxEx": 36600
+      },
       "wifiGen": 4,
-      "bands": ["2.4"],
-      "speed": { "2.4": 150 },
+      "bands": [
+        "2.4"
+      ],
+      "speed": {
+        "2.4": 150
+      },
       "recommendedDevices": null,
       "wanGbps": 0.1,
-      "lan": { "count": 2, "maxGbps": 0.1, "detail": "100M LAN×1、WAN×1（LANとしても利用可）" },
+      "lan": {
+        "count": 2,
+        "maxGbps": 0.1,
+        "detail": "100M LAN×1、WAN×1（LANとしても利用可）"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": false, "repeater": false },
+      "modes": {
+        "ap": false,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -260,7 +473,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "壁取付（取付金具添付）／DINレール（別売アダプター）",
       "ceiling": false,
       "antenna": "外付け（LTE×2、Wi-Fi×1、SMAコネクタ）",
@@ -274,7 +489,12 @@
       "lte": {
         "form": "router",
         "sim": "標準SIM",
-        "carriers": ["docomo", "au", "softbank", "rakuten"],
+        "carriers": [
+          "docomo",
+          "au",
+          "softbank",
+          "rakuten"
+        ],
         "bands": "B1／B3／B8／B18／B19／B26",
         "down": 150,
         "up": 50,
@@ -287,7 +507,18 @@
         "ddns": true,
         "autoRecovery": true
       },
-      "features": ["4G／LTE（SIMで通信）", "固定回線とLTEの自動切替（リンクバックアップ）", "自動リカバリー・定期リブート", "VPNサーバー／クライアント", "延長アンテナ対応（SMA）", "使用温度 -20〜60℃", "壁取付・DINレール取付", "リモート管理・Syslog", "ダイナミックDNS", "ISS保守対応"]
+      "features": [
+        "4G／LTE（SIMで通信）",
+        "固定回線とLTEの自動切替（リンクバックアップ）",
+        "自動リカバリー・定期リブート",
+        "VPNサーバー／クライアント",
+        "延長アンテナ対応（SMA）",
+        "使用温度 -20〜60℃",
+        "壁取付・DINレール取付",
+        "リモート管理・Syslog",
+        "ダイナミックDNS",
+        "ISS保守対応"
+      ]
     },
     {
       "model": "UD-USC1",
@@ -296,16 +527,26 @@
       "name": "4G／LTE対応 USBドングル（ドライバー不要）",
       "url": "https://www.iodata.jp/product/tsushin/m2m/ud-usc1/index.htm",
       "image": "https://www.iodata.jp/image/ud-usc1_l.jpg",
-      "jan": "",
-      "price": { "taxIn": 26730, "taxEx": 24300 },
+      "jan": "4957180171371",
+      "price": {
+        "taxIn": 26730,
+        "taxEx": 24300
+      },
       "wifiGen": null,
       "bands": [],
       "speed": {},
       "recommendedDevices": null,
       "wanGbps": null,
-      "lan": { "count": 0, "maxGbps": 0, "detail": "なし（USB Type-C接続、USB-A変換アダプター添付）" },
+      "lan": {
+        "count": 0,
+        "maxGbps": 0,
+        "detail": "なし（USB Type-C接続、USB-A変換アダプター添付）"
+      },
       "pppoeSessions": 0,
-      "modes": { "ap": false, "repeater": false },
+      "modes": {
+        "ap": false,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -318,7 +559,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["USB"],
+      "power": [
+        "USB"
+      ],
       "placement": "USBポートに直挿し",
       "ceiling": false,
       "antenna": "内蔵",
@@ -333,7 +576,12 @@
       "lte": {
         "form": "usb",
         "sim": "nanoSIM",
-        "carriers": ["docomo", "au", "softbank", "rakuten"],
+        "carriers": [
+          "docomo",
+          "au",
+          "softbank",
+          "rakuten"
+        ],
         "bands": "B1／B3／B8／B18／B19／B26",
         "down": 150,
         "up": 50,
@@ -346,7 +594,15 @@
         "ddns": false,
         "os": "Windows 11／10、macOS、Linux、iPadOS・iOS（USB-C端子搭載モデル）"
       },
-      "features": ["4G／LTE（SIMで通信）", "USBバスパワー", "ドライバー不要", "防塵・防水 IP56相当", "使用温度 -20〜60℃", "Raspberry Piなどで動作確認済み", "ポート開放対応"]
+      "features": [
+        "4G／LTE（SIMで通信）",
+        "USBバスパワー",
+        "ドライバー不要",
+        "防塵・防水 IP56相当",
+        "使用温度 -20〜60℃",
+        "Raspberry Piなどで動作確認済み",
+        "ポート開放対応"
+      ]
     },
     {
       "model": "WN-DAX3600QR",
@@ -359,13 +615,26 @@
       "jan": "4957180150291",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 2402, "2.4": 1147 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 2402,
+        "2.4": 1147
+      },
       "recommendedDevices": 32,
       "wanGbps": 2.5,
-      "lan": { "count": 4, "maxGbps": 1, "detail": "1G LAN×4" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 1,
+        "detail": "1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": true,
@@ -378,7 +647,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵×4",
@@ -388,8 +659,26 @@
       "warrantyNote": "ユーザー登録で3年（通常1年）",
       "size": "約52(W)×196(D)×197(H)mm",
       "weight": "約600g",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "ok*", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "ok*", "ocx": "no" },
-      "features": ["Wi-Fi 6", "2.5G インターネットポート", "ネットフィルタリング（5年無料）", "ペアレンタルコントロール", "VNE自動切り替え", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "ok*",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "ok*",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "2.5G インターネットポート",
+        "ネットフィルタリング（5年無料）",
+        "ペアレンタルコントロール",
+        "VNE自動切り替え",
+        "回線自動判別"
+      ]
     },
     {
       "model": "WN-DAX6000XR",
@@ -398,16 +687,29 @@
       "name": "10Gbps対応 Wi-Fi 6ルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax6000xr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax6000xr_l.jpg",
-      "jan": "",
+      "jan": "4957180153421",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 4804, "2.4": 1147 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 4804,
+        "2.4": 1147
+      },
       "recommendedDevices": 44,
       "wanGbps": 10,
-      "lan": { "count": 5, "maxGbps": 10, "detail": "10G LAN×1、1G LAN×4" },
+      "lan": {
+        "count": 5,
+        "maxGbps": 10,
+        "detail": "10G LAN×1、1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -420,15 +722,35 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵×4",
       "tempMin": 0,
       "tempMax": 40,
       "warrantyYears": 3,
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "no", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "10G インターネットポート", "10G LANポート×1", "VNE自動切り替え", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "10G インターネットポート",
+        "10G LANポート×1",
+        "VNE自動切り替え",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2025/4/23"
     },
     {
       "model": "WN-DAX5400QR",
@@ -437,16 +759,29 @@
       "name": "Wi-Fi 6対応 4804Mbpsルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax5400qr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax5400qr_l.jpg",
-      "jan": "",
+      "jan": "4957180153315",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 4804, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 4804,
+        "2.4": 574
+      },
       "recommendedDevices": 40,
       "wanGbps": 2.5,
-      "lan": { "count": 4, "maxGbps": 1, "detail": "1G LAN×4" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 1,
+        "detail": "1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": true,
@@ -459,15 +794,36 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵",
       "tempMin": 0,
       "tempMax": 40,
       "warrantyYears": 3,
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "no", "transix": "ok", "transix_fixed": "no", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "2.5G インターネットポート", "ネットフィルタリング（5年無料）", "ペアレンタルコントロール", "リピーター機能", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "no",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "2.5G インターネットポート",
+        "ネットフィルタリング（5年無料）",
+        "ペアレンタルコントロール",
+        "リピーター機能",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2025/9/3"
     },
     {
       "model": "WN-DAX4200GR",
@@ -476,16 +832,29 @@
       "name": "Wi-Fi 6対応 3603Mbpsルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax4200gr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax4200gr_l.jpg",
-      "jan": "",
+      "jan": "4957180161464",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 3603, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 3603,
+        "2.4": 574
+      },
       "recommendedDevices": 34,
       "wanGbps": 1,
-      "lan": { "count": 4, "maxGbps": 1, "detail": "1G LAN×4" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 1,
+        "detail": "1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -498,15 +867,34 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き・横置き",
       "ceiling": false,
       "antenna": "内蔵",
       "tempMin": 0,
       "tempMax": 40,
       "warrantyYears": 3,
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "ok*", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "ok*", "ocx": "no" },
-      "features": ["Wi-Fi 6", "バンドステアリング", "ペアレンタルコントロール", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "ok*",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "ok*",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "バンドステアリング",
+        "ペアレンタルコントロール",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2026/1/14"
     },
     {
       "model": "WN-DAX3600XR",
@@ -515,16 +903,29 @@
       "name": "インターネットポート、有線LANポートどちらも 最大10Gbpsに対応したWi-Fi 6ルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax3600xr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax3600xr_l.jpg",
-      "jan": "",
+      "jan": "4957180146584",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 2402, "2.4": 1150 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 2402,
+        "2.4": 1150
+      },
       "recommendedDevices": 32,
       "wanGbps": 10,
-      "lan": { "count": 5, "maxGbps": 10, "detail": "10G LAN×1、1G LAN×4" },
+      "lan": {
+        "count": 5,
+        "maxGbps": 10,
+        "detail": "10G LAN×1、1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -537,7 +938,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵",
@@ -545,8 +948,26 @@
       "tempMax": 40,
       "warrantyYears": 3,
       "warrantyNote": "ユーザー登録で3年（通常1年）",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "no", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "10G インターネットポート", "10G LANポート×1", "VNE自動切り替え", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "10G インターネットポート",
+        "10G LANポート×1",
+        "VNE自動切り替え",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2023/7/12"
     },
     {
       "model": "WN-DAX3000QR",
@@ -555,16 +976,29 @@
       "name": "2.5Gbps対応 Wi-Fi 6ルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax3000qr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax3000qr_l.jpg",
-      "jan": "",
+      "jan": "4957180146287",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 2402, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 2402,
+        "2.4": 574
+      },
       "recommendedDevices": 30,
       "wanGbps": 2.5,
-      "lan": { "count": 4, "maxGbps": 2.5, "detail": "2.5G LAN×1、1G LAN×3" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 2.5,
+        "detail": "2.5G LAN×1、1G LAN×3"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": true,
@@ -577,7 +1011,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵",
@@ -585,8 +1021,28 @@
       "tempMax": 40,
       "warrantyYears": 3,
       "warrantyNote": "ユーザー登録で3年（通常1年）",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "no", "transix": "ok", "transix_fixed": "no", "ipv6option": "no", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "2.5G インターネットポート", "2.5G LANポート×1", "ネットフィルタリング（5年無料）", "ペアレンタルコントロール", "リピーター機能", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "no",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "no",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "2.5G インターネットポート",
+        "2.5G LANポート×1",
+        "ネットフィルタリング（5年無料）",
+        "ペアレンタルコントロール",
+        "リピーター機能",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2025/4/1"
     },
     {
       "model": "WN-DAX3000GR",
@@ -595,16 +1051,29 @@
       "name": "Wi-Fi 6対応 2402Mbpsルーター",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax3000gr/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax3000gr_l.jpg",
-      "jan": "",
+      "jan": "4957180153285",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 2402, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 2402,
+        "2.4": 574
+      },
       "recommendedDevices": 32,
       "wanGbps": 1,
-      "lan": { "count": 4, "maxGbps": 1, "detail": "1G LAN×4" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 1,
+        "detail": "1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": true },
+      "modes": {
+        "ap": true,
+        "repeater": true
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": true,
@@ -618,15 +1087,35 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "内蔵",
       "tempMin": 0,
       "tempMax": 40,
       "warrantyYears": 3,
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "no", "transix": "ok", "transix_fixed": "no", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "ネットフィルタリング（別途ライセンス）", "ペアレンタルコントロール", "リピーター機能", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "no",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "ネットフィルタリング（別途ライセンス）",
+        "ペアレンタルコントロール",
+        "リピーター機能",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2025/4/23"
     },
     {
       "model": "WN-DAX1800GR",
@@ -638,13 +1127,26 @@
       "jan": "4957180146553",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 1201, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 1201,
+        "2.4": 574
+      },
       "recommendedDevices": 20,
       "wanGbps": 1,
-      "lan": { "count": 4, "maxGbps": 1, "detail": "1G LAN×4" },
+      "lan": {
+        "count": 4,
+        "maxGbps": 1,
+        "detail": "1G LAN×4"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": true,
@@ -657,7 +1159,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き・横置き",
       "ceiling": false,
       "antenna": "内蔵×2",
@@ -665,8 +1169,26 @@
       "tempMax": 40,
       "warrantyYears": 3,
       "warrantyNote": "ユーザー登録で3年（通常1年）",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "no", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "ネットフィルタリング", "ペアレンタルコントロール", "VNE自動切り替え", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "no",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "ネットフィルタリング",
+        "ペアレンタルコントロール",
+        "VNE自動切り替え",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2023/7/12"
     },
     {
       "model": "WN-DAX1800GRN",
@@ -675,16 +1197,29 @@
       "name": "コンセント直挿し型 Wi-Fi 6ルーター（有線LANポートなし）",
       "url": "https://www.iodata.jp/product/network/wnlan/wn-dax1800grn/index.htm",
       "image": "https://www.iodata.jp/image/wn-dax1800grn_l.jpg",
-      "jan": "",
+      "jan": "4957180161440",
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 1201, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 1201,
+        "2.4": 574
+      },
       "recommendedDevices": 16,
       "wanGbps": 1,
-      "lan": { "count": 0, "maxGbps": 0, "detail": "なし（Wi-Fi専用）" },
+      "lan": {
+        "count": 0,
+        "maxGbps": 0,
+        "detail": "なし（Wi-Fi専用）"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -697,15 +1232,34 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "コンセント直挿し",
       "ceiling": false,
       "antenna": "内蔵",
       "tempMin": 0,
       "tempMax": 40,
       "warrantyYears": 3,
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok*", "transix": "ok", "transix_fixed": "ok*", "ipv6option": "no", "ocnvc": "ok", "xpass": "ok", "v6connect": "no", "v6connect_fixed": "no", "ocx": "no" },
-      "features": ["Wi-Fi 6", "コンセント直挿し", "ペアレンタルコントロール", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok*",
+        "transix": "ok",
+        "transix_fixed": "ok*",
+        "ipv6option": "no",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "no",
+        "v6connect_fixed": "no",
+        "ocx": "no"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "コンセント直挿し",
+        "ペアレンタルコントロール",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2025/4/23"
     },
     {
       "model": "WN-DEAX1800GR",
@@ -716,18 +1270,39 @@
       "image": "https://www.iodata.jp/image/wn-deax1800gr_l.jpg",
       "jan": "4957180147253",
       "variants": [
-        { "model": "WN-DEAX1800GR", "label": "チャコールグレー", "jan": "4957180147253" },
-        { "model": "WN-DEAX1800GRW", "label": "ホワイト", "jan": "4957180150970" }
+        {
+          "model": "WN-DEAX1800GR",
+          "label": "チャコールグレー",
+          "jan": "4957180147253"
+        },
+        {
+          "model": "WN-DEAX1800GRW",
+          "label": "ホワイト",
+          "jan": "4957180150970"
+        }
       ],
       "price": null,
       "wifiGen": 6,
-      "bands": ["2.4", "5"],
-      "speed": { "5": 1201, "2.4": 574 },
+      "bands": [
+        "2.4",
+        "5"
+      ],
+      "speed": {
+        "5": 1201,
+        "2.4": 574
+      },
       "recommendedDevices": 20,
       "wanGbps": 1,
-      "lan": { "count": 2, "maxGbps": 1, "detail": "1G LAN×2" },
+      "lan": {
+        "count": 2,
+        "maxGbps": 1,
+        "detail": "1G LAN×2"
+      },
       "pppoeSessions": 1,
-      "modes": { "ap": true, "repeater": false },
+      "modes": {
+        "ap": true,
+        "repeater": false
+      },
       "mesh": null,
       "mlo": false,
       "netFilter": false,
@@ -740,7 +1315,9 @@
       "vlan": false,
       "snmp": false,
       "poe": false,
-      "power": ["AC"],
+      "power": [
+        "AC"
+      ],
       "placement": "縦置き専用",
       "ceiling": false,
       "antenna": "外付け×2（可動式）",
@@ -748,8 +1325,26 @@
       "tempMax": 40,
       "warrantyYears": 3,
       "warrantyNote": "ユーザー登録で3年（通常1年）",
-      "ipv6": { "v6plus": "ok", "v6plus_fixed": "ok", "transix": "ok", "transix_fixed": "ok", "ipv6option": "ok", "ocnvc": "ok", "xpass": "ok", "v6connect": "ok", "v6connect_fixed": "ok", "ocx": "ok" },
-      "features": ["Wi-Fi 6", "可動式外付けアンテナ", "バンドステアリング", "VNE自動切り替え", "回線自動判別"]
+      "ipv6": {
+        "v6plus": "ok",
+        "v6plus_fixed": "ok",
+        "transix": "ok",
+        "transix_fixed": "ok",
+        "ipv6option": "ok",
+        "ocnvc": "ok",
+        "xpass": "ok",
+        "v6connect": "ok",
+        "v6connect_fixed": "ok",
+        "ocx": "ok"
+      },
+      "features": [
+        "Wi-Fi 6",
+        "可動式外付けアンテナ",
+        "バンドステアリング",
+        "VNE自動切り替え",
+        "回線自動判別"
+      ],
+      "discontinuedDate": "2026/3/11"
     }
   ]
 }
