@@ -51,14 +51,24 @@ async function get(url) {
   return new TextDecoder(enc).decode(buf);
 }
 
-export const toText = html => html
+// HTMLの文字参照（&times; &#215; &#xD7; など）を文字に戻す
+const NAMED_ENTITIES = {
+  nbsp: ' ', ensp: ' ', emsp: ' ', thinsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"', apos: "'",
+  yen: '￥', times: '×', divide: '÷', minus: '−', ndash: '–', mdash: '—', hellip: '…', middot: '・',
+  circ: '○', cir: '○', bull: '•', laquo: '«', raquo: '»', copy: '©', reg: '®', trade: '™', deg: '°',
+  plusmn: '±', check: '✓', cross: '✗', rarr: '→', larr: '←', uarr: '↑', darr: '↓', sup2: '²', sup3: '³'
+};
+export const decodeEntities = s => s
+  .replace(/&#x([0-9a-f]+);?/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+  .replace(/&#(\d+);?/g, (_, n) => String.fromCodePoint(+n))
+  .replace(/&([a-z][a-z0-9]*);/gi, (m, name) => NAMED_ENTITIES[name] ?? NAMED_ENTITIES[name.toLowerCase()] ?? m);
+
+export const toText = html => decodeEntities(html
   .replace(/<script[\s\S]*?<\/script>/gi, ' ')
   .replace(/<style[\s\S]*?<\/style>/gi, ' ')
   .replace(/<br\s*\/?>/gi, '\n')
-  .replace(/<[^>]+>/g, ' ')
-  .replace(/&nbsp;/g, ' ').replace(/&yen;/g, '￥').replace(/&amp;/g, '&')
-  .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
-  .replace(/[ \t\r\f\v]+/g, ' ')
+  .replace(/<[^>]+>/g, ' '))
+  .replace(/[ \t\r\f\v\u00A0]+/g, ' ')
   .replace(/\n\s+/g, '\n')
   .trim();
 
