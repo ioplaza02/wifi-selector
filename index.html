@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Wi-Fiセレクター｜I-O DATA</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231a5fb4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 簡易パスワード -->
+  <div id="gate" class="gate">
+    <form id="gateForm" class="gate-box" autocomplete="off">
+      <div class="gate-title">Wi-Fiセレクター</div>
+      <p class="gate-lead">社内限定ページです。パスワードを入力してください。</p>
+      <input id="gateInput" type="password" class="gate-input" placeholder="パスワード" aria-label="パスワード">
+      <button type="submit" class="btn btn-primary gate-btn">表示する</button>
+      <p id="gateError" class="gate-error" hidden>パスワードが違います。</p>
+    </form>
+  </div>
+
+  <div id="app" hidden>
+    <div class="topband">
+      <span class="topband-left">【社内限定】</span>
+      <span class="topband-right">お問い合わせ先：IS課 西川</span>
+    </div>
+
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 18.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5Zm-4.6-3.3a6.5 6.5 0 0 1 9.2 0l-1.4 1.4a4.5 4.5 0 0 0-6.4 0l-1.4-1.4Zm-3.3-3.3a11.2 11.2 0 0 1 15.8 0l-1.4 1.4a9.2 9.2 0 0 0-13 0l-1.4-1.4ZM.8 8.6a15.9 15.9 0 0 1 22.4 0l-1.4 1.4a13.9 13.9 0 0 0-19.6 0L.8 8.6Z"/></svg>
+          </div>
+          <div>
+            <h1 class="brand-title">Wi-Fiセレクター</h1>
+            <p class="brand-sub">Wi-Fiルーター・アクセスポイント・LTEルーターを、必要な仕様から絞り込めます</p>
+          </div>
+        </div>
+        <div class="header-meta">
+          <span id="updatedAt" class="updated"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside id="sidebar" class="sidebar" aria-label="絞り込み条件">
+        <div class="sidebar-head">
+          <span class="sidebar-title">絞り込み</span>
+          <button type="button" id="resetBtn" class="btn btn-ghost btn-sm">条件をリセット</button>
+          <button type="button" id="closeSidebar" class="btn btn-ghost btn-sm only-mobile">閉じる</button>
+        </div>
+        <div id="filters"></div>
+      </aside>
+
+      <main class="main">
+        <div class="toolbar">
+          <div class="toolbar-left">
+            <button type="button" id="openSidebar" class="btn btn-secondary only-mobile">絞り込み</button>
+            <div class="result-count"><strong id="resultCount">0</strong> 件</div>
+            <label class="toggle">
+              <input type="checkbox" id="toggleDiscon">
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              <span class="toggle-label">生産終了品も表示</span>
+            </label>
+          </div>
+          <div class="toolbar-right">
+            <button type="button" id="copyUrlBtn" class="btn btn-secondary">結果のURLをコピー</button>
+            <button type="button" id="printListBtn" class="btn btn-secondary">PDFで保存</button>
+          </div>
+        </div>
+
+        <div id="activeChips" class="active-chips"></div>
+        <div id="guide" class="guide" hidden></div>
+        <div id="results" class="results"></div>
+
+        <p class="footnote">
+          ※価格・在庫状況は変動する場合があります。価格表記のない商品はオープン価格です。<br>
+          ※IPv6（IPoE）の対応状況は、当社「<a id="ipv6Src" href="https://www.iodata.jp/pio/io/network/ipv6.htm" target="_blank" rel="noopener">IPv6（IPoE）接続 動作確認済みサービス一覧＆対応機器</a>」（<span id="ipv6AsOf"></span>）にもとづきます。最新のファームウェアでご利用ください。<br>
+          ※伝送速度は規格上の理論値です。
+        </p>
+      </main>
+    </div>
+
+    <!-- 比較バー -->
+    <div id="compareBar" class="compare-bar" hidden>
+      <span><strong id="compareCount">0</strong> 件を選択中</span>
+      <button type="button" id="compareClear" class="btn btn-ghost btn-sm btn-on-dark">選択を解除</button>
+      <button type="button" id="compareOpen" class="btn btn-primary">選んだ商品を比較</button>
+    </div>
+
+    <!-- 比較モーダル -->
+    <div id="compareModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2 id="compareTitle" class="modal-title">商品比較</h2>
+          <label class="diff-toggle"><input type="checkbox" id="diffOnly"> 違いがある行だけ表示</label>
+          <button type="button" id="comparePdf" class="btn btn-secondary btn-sm">PDFで保存</button>
+          <button type="button" id="compareClose" class="btn btn-primary btn-sm modal-close">閉じる ✕</button>
+        </div>
+        <div class="modal-body">
+          <div id="compareTable" class="compare-scroll"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" hidden></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
